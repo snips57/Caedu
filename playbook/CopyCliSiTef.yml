@@ -1,0 +1,23 @@
+---
+# troca de Arquvi CliSiTef PDV Zanthus
+
+#- name: Atualizacao do sistema operacional
+#  action: apt update_cache=true
+
+#  strategy: free
+#  remote_user: zanthus
+#  become: yes
+#  become_method: sudo
+
+# Copia do arquivo CliSiTef
+
+- name: Copiando arquivo Pdv ZArqConfig
+  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/path_comum/ZArqConfig
+
+- name: Copiando aquivo Pdv Java
+  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/pdvJava
+
+- name: Reniciando PDVs
+  reboot:
+
+...
