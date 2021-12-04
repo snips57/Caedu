@@ -12,10 +12,10 @@
 # Copia do arquivo CliSiTef
 
 - name: Copiando arquivo Pdv ZArqConfig
-  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/path_comum/ZArqConfig
+  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/path_comum/ZArqConfig/Temp
 
 - name: Copiando aquivo Pdv Java
-  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/pdvJava
+  copy: src=CliSiTef.ini dest=/Zanthus/Zeus/pdvJava/Temp
 
 - name: Reniciando PDVs
   reboot:
